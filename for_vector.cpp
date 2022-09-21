@@ -19,9 +19,26 @@ using std::vector;
 int main()
 {
 	
+	string prompt {"Please enter a number: "};
+	int user_input;
+	
+	vector<int> numbers;
+
+
 	for ( int i = 0; i < 5; i++ ){
-		cout << i << endl;
+	//for loop that iterates 5 times and grabs user input that goes into a vector
+		cout << prompt;
+		cin >> user_input;
+
+		numbers.push_back(user_input);
+
 	}
+
+	//for (INIT : daat_structure)
+	for (int n : numbers){
+		cout << n << endl;
+	}
+
 
 	return 0;
 }
